@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href='/static/index.css'>
+
+  <title>GIPHY Search</title>
+
+</head>
+<body>
+
+  <div id='homepage-container' class="container body-container">
+    <div id='title-div' class='row'>
+      <div class='col-lg-4'>
+      </div>
+      <div class='col-lg-4'>
+        <h1 class='title'>GIPHY Search</h1>
+      </div><!-- column -->
+    </div><!-- title-div -->
+
+    <div id='form-div' class='row'>
+      <div class='col-lg-4'>
+      </div>
+      <div class='col-lg-4'>
+        <div class='form-holder'>
+          <form id='giphy-search-form'>
+            <!-- <label for='search'>Search: </label> -->
+            <input type='text' class='form-control' id='search-field' name='search' placeholder='Enter a word or phrase'></br>
+            <input type='submit' class='btn btn-primary btn-block' id='giphy-search-btn' value='GO'>
+          </form>
+        </div><!-- form-holder -->
+      </div><!-- column -->
+    </div><!-- form-div -->
+
+    <div id='results-div' class='row'>
+      <img id='giphy-result'></img>  <!-- result -->
+    </div><!-- results-div -->
+  </div><!-- homepage-container -->
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/static/homepage.js"></script>
+
+</body>
+</html>
