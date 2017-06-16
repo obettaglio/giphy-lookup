@@ -40,10 +40,8 @@ def search_giphy():
 
     response = requests.get('http://api.giphy.com/v1/gifs/search', params=parameters)
     data = response.json()
-    print data
 
     url = data['data'][0]['embed_url']
-    print url
 
     return jsonify(url)
 
