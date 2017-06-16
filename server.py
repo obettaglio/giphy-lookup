@@ -41,9 +41,11 @@ def search_giphy():
     response = requests.get('http://api.giphy.com/v1/gifs/search', params=parameters)
     data = response.json()
 
-    url = data['data'][0]['embed_url']
+    gif_id = data['data'][0]['id']
 
-    return jsonify(url)
+    gif_url = 'https://media.giphy.com/media/' + gif_id + '/giphy.gif'
+
+    return jsonify(gif_url)
 
 
 if __name__ == "__main__":
