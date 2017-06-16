@@ -18,7 +18,7 @@ function getSearchValue(evt) {
     // send data to route via post request,
     // call resetSearchForm
 
-    evt.preventDefault(); // not preventing submit button from reloading page
+    evt.preventDefault();
 
     var formInputs = {
         'search': $('#search-field').val()

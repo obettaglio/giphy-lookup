@@ -23,10 +23,7 @@ def index():
 def search_giphy():
     """Requests GIF url from GIPHY API.
 
-    API: http://api.giphy.com/v1/gifs/search?q=[KEYWORD_HERE]&api_key=dc6zaTOxFJmzC&limit=1
-    
-    Further options:
-        -optimize search terms by capitalization, punctuation, etc.
+    Note: API automatically optimizes for capitalization and punctuation.
     """
 
     search = request.form.get('search')

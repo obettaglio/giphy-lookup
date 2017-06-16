@@ -11,3 +11,29 @@ img {
 	margin: auto;
 	margin-top: 20px;
 }
+
+.footer {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #586069;
+    border-top: 1px solid #eaecef;
+}
+
+.footer-links {
+    margin: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 10px;
+}
+
+.float-right {
+    float: right !important;
+}
